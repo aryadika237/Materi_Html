@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+        {
+        const date1 = new Date(2022, 10, 10, 18, 17, 9, 246);
+        console.info(date1);
+
+        const date2 = new Date(2022, 1, 15, 20, 4, 9, 137);
+        console.info(date2);
+
+        const date3 = new Date(2022, 9, 11, 22, 2, 8, 714);
+        console.info(date3);
+
+        const date4 = new Date(2022, 18, 7, 14, 19, 20, 379);
+        console.info(date4);
+        }
+
+        // epoch & unix timestamp
+
+        {
+        const date1 = new Date();
+        console.info(date1.getTime());
+
+        const date2 = new Date(2022, 27, 1);
+        console.info(date2.getTime());
+
+        const date3 = new Date(2022, 6, 17, 18, 3);
+        console.info(date3.getTime());
+
+        const date4 = new Date(2022, 31, 18, 77, 1, 7, 4);
+        console.info(date4.getTime());
+
+        console.info(Date.now());
+        }
+    </script>
+
+</body>
+</html>
